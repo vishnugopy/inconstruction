@@ -1,6 +1,6 @@
 // src/InConstruction.tsx
 import React, { ReactNode } from "react";
-import "./InConstruction.css"; // Assuming you have a CSS file for styles
+import "./InConstruction.css";
 
 // Define the component's props interface
 interface InConstructionProps {
