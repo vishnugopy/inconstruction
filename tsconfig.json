@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "ESNext",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "declaration": true,  // Generates type declarations
+    "outDir": "./dist",    // Output directory for compiled files
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src"],     // Include all TypeScript files in 'src' directory
+  "exclude": ["node_modules", "dist"]  // Exclude 'node_modules' and 'dist' directories
+}
