@@ -1,4 +1,4 @@
-# react-in-construction
+# inconstruction
 
 A React/Next.js component that adds an "Under Construction" overlay with a customizable message to any wrapped children.
 
@@ -31,8 +31,8 @@ const MyPage: React.FC = () => {
       <div>
         <h1>New Feature Coming Soon</h1>
         <p>
-          This part of the website is currently under construction. Stay tuned
-          for updates!
+          We're working on a new feature for this page. Please check back soon
+          to see the updates!
         </p>
       </div>
     </InConstruction>

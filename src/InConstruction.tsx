@@ -16,7 +16,7 @@ const InConstruction: React.FC<InConstructionProps> = ({
   return (
     <div className="in-construction-zone">
       <div className="overlay">
-        <p>{message || "This section is under construction 🚧"}</p>
+        <p>🚧{message || "This section is under construction "}🚧</p>
       </div>
       <div className="content">{children}</div>
     </div>

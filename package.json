@@ -3,6 +3,13 @@
   "version": "1.0.4",
   "main": "dist/InConstruction.js", 
   "types": "dist/InConstruction.d.ts",  
+  "keywords": [
+    "inconstruction",
+    "react",
+    "typescript",
+    "css" ,
+    "animation"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
      "build": "tsc"
