@@ -7,7 +7,9 @@ export interface InConstructionProps {
   children: ReactNode;
   message?: string; // Optional custom message for the "Under Construction" notice
   className?: string;
+  childrenClassName?: string;
   language?: "en" | "fr";
+  icon?: ReactNode;
 }
 
 // Functional component with TypeScript support
@@ -16,21 +18,23 @@ const InConstruction: React.FC<InConstructionProps> = ({
   message,
   className,
   language = "en",
+  childrenClassName,
+  icon,
 }) => {
   return (
     <div className={`in-construction-zone ${className}`}>
       <div className="overlay">
+        {icon ? icon : "🚧"}
         <p>
-          🚧
           {message
             ? message
             : language === "en"
             ? "This section is under construction "
             : "Cette section est en construction "}
-          🚧
         </p>
+        {icon ? icon : "🚧"}
       </div>
-      <div className="content">{children}</div>
+      <div className={`content ${childrenClassName}`}>{children}</div>
     </div>
   );
 };
