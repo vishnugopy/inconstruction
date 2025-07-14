@@ -8,7 +8,7 @@ export interface InConstructionProps {
   message?: string; // Optional custom message for the "Under Construction" notice
   className?: string;
   childrenClassName?: string;
-  language?: "en" | "fr";
+  language?: string;
   icon?: ReactNode;
   visible?: boolean; // Toggle control for overlay visibility
   endDate?: Date; // End date for automatic overlay display
