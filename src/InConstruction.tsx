@@ -3,7 +3,7 @@ import React, { ReactNode } from "react";
 import "./InConstruction.css";
 
 // Define the component's props interface
-interface InConstructionProps {
+export interface InConstructionProps {
   children: ReactNode;
   message?: string; // Optional custom message for the "Under Construction" notice
 }
